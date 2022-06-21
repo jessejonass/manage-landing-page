@@ -2,6 +2,12 @@
 module.exports = {
   content: ['./src/**/*.tsx'],
   theme: {
+    screens: {
+      mobile: '375px',
+      tablet: '640px',
+      laptop: '1024px',
+      desktop: '1440px',
+    },
     extend: {
       colors: {
         'manage-red': {
@@ -16,6 +22,9 @@ module.exports = {
           500: 'hsl(227, 12%, 61%)',
           100: 'hsl(0, 0%, 98%)',
         },
+      },
+      fontFamily: {
+        'be-vietnam': ['Be Vietnam', 'sans-serif'],
       },
     },
   },

@@ -1,10 +1,13 @@
 import { FC } from 'react';
+import Head from 'next/head';
 
 const Home: FC = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <>
+      <Head>
+        <title>Manage - Build better products</title>
+      </Head>
+    </>
   );
 };
 
