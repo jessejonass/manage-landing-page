@@ -24,7 +24,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        'be-vietnam': ['Be Vietnam', 'sans-serif'],
+        sans: ['Be Vietnam', 'sans-serif'],
       },
     },
   },
