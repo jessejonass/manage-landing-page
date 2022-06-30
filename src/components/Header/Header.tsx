@@ -6,7 +6,7 @@ import NavItem from './components/NavItem';
 
 const Header: FC = () => {
   return (
-    <div className='flex items-center justify-between h-16 px-16'>
+    <div className='flex items-center justify-between h-16 px-4 tablet:px-16 transition-all'>
       <Link href='/'>
         <img src='/images/logo.svg' alt='Logo' />
       </Link>
@@ -19,7 +19,10 @@ const Header: FC = () => {
         <NavItem href='/community' title='Community' />
       </Nav>
 
-      <Button>Get started</Button>
+      <Button className='hidden tablet:block'>Get started</Button>
+      <Button transparent className='tablet:hidden'>
+        <img src='/icons/icon-hamburger.svg' alt='Logo' />
+      </Button>
     </div>
   );
 };
