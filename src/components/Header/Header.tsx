@@ -15,7 +15,7 @@ const Header: FC = () => {
 
   return (
     <>
-      <div className='flex items-center justify-between h-16 px-4 tablet:px-16 transition-all'>
+      <div className='p-manage flex items-center justify-between h-16 transition-all'>
         <Link href='/'>
           <img src='/images/logo.svg' alt='Logo' />
         </Link>
@@ -29,7 +29,7 @@ const Header: FC = () => {
         </Nav>
 
         <Button className='hidden tablet:block'>Get started</Button>
-        <div className='tablet:hidden z-10'>
+        <div className='laptop:hidden z-10'>
           <Hamburger size={24} toggled={sideBarIsOpen} toggle={handleSidebar} />
         </div>
       </div>
