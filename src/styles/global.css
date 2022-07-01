@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .p-manage {
+    @apply px-4 tablet:px-16 laptop:px-32 desktop:px-64;
+  }
+}
