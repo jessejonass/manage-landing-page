@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import Head from 'next/head';
 import Header from 'components/Header';
+import Hero from 'components/pages/Hero';
 
 const Home: FC = () => {
   return (
@@ -10,6 +11,7 @@ const Home: FC = () => {
       </Head>
 
       <Header />
+      <Hero />
     </>
   );
 };
